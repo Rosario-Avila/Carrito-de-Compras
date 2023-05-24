@@ -1,0 +1,9 @@
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\bin\Debug\commerce.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\bin\Debug\commerce.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\bin\Debug\domain.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\bin\Debug\domain.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\obj\Debug\commerce.csproj.AssemblyReference.cache
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\obj\Debug\commerce.csproj.CoreCompileInputs.cache
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\obj\Debug\commerce.csproj.CopyComplete
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\obj\Debug\commerce.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\obj\Debug\commerce.pdb

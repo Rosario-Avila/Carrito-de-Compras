@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tp4 Carrito", "Tp4 Carrito\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "commerce", "commerce\commerce.csproj", "{F79443E0-2616-47DF-BB8D-F2603FEB9924}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core", "core\core.csproj", "{6AABB9E5-21E8-40E1-830D-1BB2D2E2F568}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "domain", "dominio\domain.csproj", "{74E0B4E2-1F06-4B00-97BA-C831A5832DAD}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{F79443E0-2616-47DF-BB8D-F2603FEB9924}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F79443E0-2616-47DF-BB8D-F2603FEB9924}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F79443E0-2616-47DF-BB8D-F2603FEB9924}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AABB9E5-21E8-40E1-830D-1BB2D2E2F568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AABB9E5-21E8-40E1-830D-1BB2D2E2F568}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AABB9E5-21E8-40E1-830D-1BB2D2E2F568}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AABB9E5-21E8-40E1-830D-1BB2D2E2F568}.Release|Any CPU.Build.0 = Release|Any CPU
 		{74E0B4E2-1F06-4B00-97BA-C831A5832DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{74E0B4E2-1F06-4B00-97BA-C831A5832DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74E0B4E2-1F06-4B00-97BA-C831A5832DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU

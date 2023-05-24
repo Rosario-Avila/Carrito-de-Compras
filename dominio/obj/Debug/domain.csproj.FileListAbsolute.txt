@@ -1,0 +1,6 @@
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\dominio\bin\Debug\domain.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\dominio\bin\Debug\domain.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\dominio\obj\Debug\domain.csproj.AssemblyReference.cache
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\dominio\obj\Debug\domain.csproj.CoreCompileInputs.cache
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\dominio\obj\Debug\domain.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\dominio\obj\Debug\domain.pdb

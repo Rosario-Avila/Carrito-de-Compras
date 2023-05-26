@@ -48,6 +48,46 @@ namespace domain
             }
         }
 
+        public List<Article> ListarConSp()
+        {
+            List<Article> list = new List<Article>();
+            DataAccess data = new DataAccess();
+            try
+            {
+                data.setSp("SP_Article");
+
+
+                data.execute();
+
+                while (data.sqlReader.Read())
+                {
+
+                    Article aux = new Article();
+                    aux.ArticleId = (!(data.sqlReader["artId"] is DBNull)) ? (int)data.sqlReader["artId"] : 0;
+                    aux.Name = (!(data.sqlReader["Nombre"] is DBNull)) ? (string)data.sqlReader["Nombre"] : "";
+                    aux.Description = (!(data.sqlReader["artDescrip"] is DBNull)) ? (string)data.sqlReader["artDescrip"] : "";
+                    aux.ArticleCode = (!(data.sqlReader["artCode"] is DBNull)) ? (string)data.sqlReader["artCode"] : "";
+                    aux.Price = (!(data.sqlReader["price"] is DBNull)) ? (decimal)data.sqlReader["price"] : 0;
+                    aux.ArticleCategory = new Category(
+                        (!(data.sqlReader["categoryId"] is DBNull)) ? (int)data.sqlReader["categoryId"] : 0,
+                        (!(data.sqlReader["category"] is DBNull)) ? (string)data.sqlReader["category"] : ""
+                        );
+                    aux.ArticleBrand = new Brand(
+                        (!(data.sqlReader["brandId"] is DBNull)) ? (int)data.sqlReader["brandId"] : 0,
+                        (!(data.sqlReader["brand"] is DBNull)) ? (string)data.sqlReader["brand"] : ""
+                        );
+
+                    list.Add(aux);
+                }
+                return list;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
         public void Modify(Article article)
         {
             DataAccess dataAcces = new DataAccess();

@@ -21,6 +21,12 @@ namespace domain
             command.CommandText = query;
         }
 
+        public void setSp(string Sp)
+        {
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            command.CommandText = Sp;
+        }
+
         public void setearParametro(string name, object valor)
         {
             command.Parameters.AddWithValue(name, valor);

@@ -13,7 +13,9 @@ namespace Tp4_Carrito
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        
+            ArticleConector conector = new ArticleConector();
+            dgvArticle.DataSource = conector.ListarConSp();
+            dgvArticle.DataBind();
         }
     }
 }

@@ -105,3 +105,9 @@ insert into imagenes values
 (5, 'https://cnnespanol2.files.wordpress.com/2015/12/gadgets-mc3a1s-populares-apple-tv-2015-18.jpg?quality=100&strip=info&w=460&h=260&crop=1')
 
 select * from ARTICULOS
+
+Select A.Id as artId, A.Nombre, A.Descripcion as artDescrip, Codigo as artCode, Precio as price, C.Descripcion as category, A.IdCategoria as categoryId, M.Descripcion as brand, A.IdMarca as brandId 
+From ARTICULOS A, CATEGORIAS C, MARCAS M
+Where C.Id = A.IdCategoria And M.Id = A.IdMarca
+
+

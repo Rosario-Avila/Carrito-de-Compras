@@ -11,11 +11,14 @@ namespace Tp4_Carrito
 {
     public partial class Default : System.Web.UI.Page
     {
+        public List<Article> ListadoDeArticulos { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticleConector conector = new ArticleConector();
-            dgvArticle.DataSource = conector.ListarConSp();
-            dgvArticle.DataBind();
+            ListadoDeArticulos = conector.ListarConSp();
+            
+            //dgvArticle.DataSource = conector.ListarConSp();
+            //dgvArticle.DataBind();
         }
     }
 }

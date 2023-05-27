@@ -54,7 +54,7 @@ namespace domain
             DataAccess data = new DataAccess();
             try
             {
-                data.setSp("SP_Article");
+                data.setSp("SP_ArticlesList");
 
 
                 data.execute();
@@ -75,6 +75,11 @@ namespace domain
                     aux.ArticleBrand = new Brand(
                         (!(data.sqlReader["brandId"] is DBNull)) ? (int)data.sqlReader["brandId"] : 0,
                         (!(data.sqlReader["brand"] is DBNull)) ? (string)data.sqlReader["brand"] : ""
+                        );
+                    aux.ArticleImage = new ImageClass(
+                        (!(data.sqlReader["imageId"] is DBNull)) ? (int)data.sqlReader["imageId"] : 0,
+                        (!(data.sqlReader["artId"] is DBNull)) ? (int)data.sqlReader["artId"]:0,
+                        (!(data.sqlReader["imageUrl"] is DBNull)) ? (string)data.sqlReader["imageUrl"] : ""
                         );
 
                     list.Add(aux);

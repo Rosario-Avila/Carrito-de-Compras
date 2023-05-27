@@ -2,6 +2,11 @@
 {
     public class ImageClass
     {
+        public ImageClass()
+        {
+
+        }
+
         public ImageClass(int Id, int ArticleId, string ImageUrl) {
             this.Id = Id;
             this.ArticleId = ArticleId;

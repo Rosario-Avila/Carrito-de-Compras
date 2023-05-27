@@ -14,6 +14,7 @@ namespace domain
         public Brand ArticleBrand { get; set; }
         [DisplayName("Category")]
         public Category ArticleCategory { get; set; }
+        public ImageClass ArticleImage { get; set; }
         public string Image { get; set; }
         public decimal Price { get; set; }
     }

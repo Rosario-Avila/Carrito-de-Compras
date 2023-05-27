@@ -33,8 +33,9 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><%#Eval("Name") %></h5>
+                            <p class="card-text"><%#Eval("ArticleBrand") %></p>
                             <p class="card-text"><%#Eval("Description") %></p>
-                            <a href="#">content</a>
+                            <%--<a href="#">content</a> --%>
                             <asp:Button Text="Agregar" CssClass="btn btn-primary" runat="server" ID="btnAgregar" CommandArgument='<%#Eval("ArticleId")%>' CommandName="ArticleId" Onclick="btnAgregar_Click" />
                         </div>
                     </div>

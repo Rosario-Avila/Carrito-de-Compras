@@ -23,8 +23,6 @@ namespace Tp4_Carrito
                 repRepeater.DataSource = ListadoDeArticulos;
                 repRepeater.DataBind();
             }
-
-       
             
             //dgvArticle.DataSource = conector.ListarConSp();
             //dgvArticle.DataBind();

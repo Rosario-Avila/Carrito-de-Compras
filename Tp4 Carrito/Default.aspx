@@ -8,29 +8,16 @@
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
 
-       <%--<%
-            foreach (domain.Article article in ListadoDeArticulos)
-            { 
-                %>
-                        
-                 <div class="col">
-                    <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"><%: article.Name  %></h5>
-                            <p class="card-text"><%: article.Description  %></p>
-                            <a href="#">content</a>
-                        </div>
-                    </div>
-                </div>
-   
-        <%  } %>--%>
-
         <asp:Repeater runat="server" ID="repRepeater">
             <ItemTemplate>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="<%#Eval("ArticleImage") %>" class="card-img-top" alt="...">
+                        <img 
+                            src="<%#Eval("ArticleImage") %>" 
+                            class="card-img-top" 
+                            alt="Imagen del producto <%#Eval("Name") %>" 
+                            onerror="this.src='https://static.wikia.nocookie.net/videojuego/images/9/9c/Imagen_no_disponible-0.png/revision/latest/thumbnail/width/360/height/360?cb=20170910134200'"
+                        >
                         <div class="card-body">
                             <h5 class="card-title"><%#Eval("Name") %></h5>
                             <p class="card-text"><%#Eval("ArticleBrand") %></p>

@@ -10,3 +10,15 @@ C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\Tp4 Carrito\obj\Debug\Tp4
 C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\Tp4 Carrito\obj\Debug\Tp4 Carrito.csproj.CopyComplete
 C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\Tp4 Carrito\obj\Debug\Tp4 Carrito.dll
 C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\Tp4 Carrito\obj\Debug\Tp4 Carrito.pdb
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.csproj.AssemblyReference.cache
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.csproj.CoreCompileInputs.cache
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.dll
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.pdb
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\bin\Tp4 Carrito.dll.config
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\bin\Tp4 Carrito.dll
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\bin\Tp4 Carrito.pdb
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\bin\commerce.dll
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\bin\domain.dll
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\bin\commerce.pdb
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\bin\domain.pdb
+D:\FRBA\Programacion 3\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.csproj.CopyComplete

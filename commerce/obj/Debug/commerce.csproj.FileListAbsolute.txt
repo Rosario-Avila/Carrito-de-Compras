@@ -7,3 +7,12 @@ C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\obj\Debug\commer
 C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\obj\Debug\commerce.csproj.CopyComplete
 C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\obj\Debug\commerce.dll
 C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\commerce\obj\Debug\commerce.pdb
+D:\FRBA\Programacion 3\Carrito-de-Compras\commerce\bin\Debug\commerce.dll
+D:\FRBA\Programacion 3\Carrito-de-Compras\commerce\bin\Debug\commerce.pdb
+D:\FRBA\Programacion 3\Carrito-de-Compras\commerce\bin\Debug\domain.dll
+D:\FRBA\Programacion 3\Carrito-de-Compras\commerce\bin\Debug\domain.pdb
+D:\FRBA\Programacion 3\Carrito-de-Compras\commerce\obj\Debug\commerce.csproj.AssemblyReference.cache
+D:\FRBA\Programacion 3\Carrito-de-Compras\commerce\obj\Debug\commerce.csproj.CoreCompileInputs.cache
+D:\FRBA\Programacion 3\Carrito-de-Compras\commerce\obj\Debug\commerce.csproj.CopyComplete
+D:\FRBA\Programacion 3\Carrito-de-Compras\commerce\obj\Debug\commerce.dll
+D:\FRBA\Programacion 3\Carrito-de-Compras\commerce\obj\Debug\commerce.pdb

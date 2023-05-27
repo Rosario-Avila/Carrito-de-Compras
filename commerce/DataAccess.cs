@@ -10,8 +10,8 @@ namespace domain
 
         public DataAccess()
         {
-            connection = new SqlConnection("server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true ");
-            //connection = new SqlConnection("server=localhost; database=CATALOGO_P3_DB;User Id=sa; password=fakePassw0rd"); 
+            //connection = new SqlConnection("server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true ");
+            connection = new SqlConnection("server=localhost; database=CATALOGO_P3_DB;User Id=sa; password=fakePassw0rd"); 
             command = new SqlCommand();
         }
 

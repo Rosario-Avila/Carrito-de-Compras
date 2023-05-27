@@ -4,3 +4,9 @@ C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\dominio\obj\Debug\domain.
 C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\dominio\obj\Debug\domain.csproj.CoreCompileInputs.cache
 C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\dominio\obj\Debug\domain.dll
 C:\Users\Rosario Avila\OneDrive\Escritorio\Tp4 Carrito\dominio\obj\Debug\domain.pdb
+D:\FRBA\Programacion 3\Carrito-de-Compras\dominio\bin\Debug\domain.dll
+D:\FRBA\Programacion 3\Carrito-de-Compras\dominio\bin\Debug\domain.pdb
+D:\FRBA\Programacion 3\Carrito-de-Compras\dominio\obj\Debug\domain.csproj.AssemblyReference.cache
+D:\FRBA\Programacion 3\Carrito-de-Compras\dominio\obj\Debug\domain.csproj.CoreCompileInputs.cache
+D:\FRBA\Programacion 3\Carrito-de-Compras\dominio\obj\Debug\domain.dll
+D:\FRBA\Programacion 3\Carrito-de-Compras\dominio\obj\Debug\domain.pdb

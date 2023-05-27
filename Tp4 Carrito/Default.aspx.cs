@@ -16,9 +16,23 @@ namespace Tp4_Carrito
         {
             ArticleConector conector = new ArticleConector();
             ListadoDeArticulos = conector.ListarConSp();
+
+
+            if (!IsPostBack)
+            {
+                repRepeater.DataSource = ListadoDeArticulos;
+                repRepeater.DataBind();
+            }
+
+       
             
             //dgvArticle.DataSource = conector.ListarConSp();
             //dgvArticle.DataBind();
+        }
+
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            string boton = ((Button)sender).CommandArgument;
         }
     }
 }

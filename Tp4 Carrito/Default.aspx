@@ -8,7 +8,7 @@
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
 
-        <%
+       <%--<%
             foreach (domain.Article article in ListadoDeArticulos)
             { 
                 %>
@@ -19,24 +19,30 @@
                         <div class="card-body">
                             <h5 class="card-title"><%: article.Name  %></h5>
                             <p class="card-text"><%: article.Description  %></p>
+                            <a href="#">content</a>
                         </div>
                     </div>
                 </div>
    
-        <%  } %>
+        <%  } %>--%>
+
+        <asp:Repeater runat="server" ID="repRepeater">
+            <ItemTemplate>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><%#Eval("Name") %></h5>
+                            <p class="card-text"><%#Eval("Description") %></p>
+                            <a href="#">content</a>
+                            <asp:Button Text="Agregar" CssClass="btn btn-primary" runat="server" ID="btnAgregar" CommandArgument='<%#Eval("ArticleId")%>' CommandName="ArticleId" Onclick="btnAgregar_Click" />
+                        </div>
+                    </div>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    
+
     </div>
-            
-
-
-    <asp:GridView runat="server" ID="dgvArticle" CssClass="table" AutoGenerateColumns="false">
-        <Columns>
-            <asp:BoundField HeaderText="Name" DataField="Name" />
-            <asp:BoundField HeaderText="Description" DataField="Description" />
-            <asp:BoundField HeaderText="Price" DataField="Price" />
-            <asp:BoundField HeaderText="Brand" DataField="ArticleBrand.Description" />
-            <asp:BoundField HeaderText="Category" DataField="ArticleCategory.Description" />
-
-        </Columns>
-    </asp:GridView> 
 
 </asp:Content>

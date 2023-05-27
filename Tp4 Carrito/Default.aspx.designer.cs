@@ -15,12 +15,12 @@ namespace Tp4_Carrito
     {
 
         /// <summary>
-        /// dgvArticle control.
+        /// repRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvArticle;
+        protected global::System.Web.UI.WebControls.Repeater repRepeater;
     }
 }

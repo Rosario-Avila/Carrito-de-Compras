@@ -28,9 +28,12 @@ namespace Tp4_Carrito
             //dgvArticle.DataBind();
         }
 
-        protected void btnAgregar_Click(object sender, EventArgs e)
-        {
-            string boton = ((Button)sender).CommandArgument;
+        protected void verMas_Click(object sender, EventArgs e)
+        {   
+            
+           
+
+            Response.Redirect("articleDetail.aspx?",false);
         }
     }
 }

@@ -29,11 +29,12 @@ namespace Tp4_Carrito
         }
 
         protected void verMas_Click(object sender, EventArgs e)
-        {   
-            
-           
+        {
 
-            Response.Redirect("articleDetail.aspx?",false);
+            Button verMas = (Button)sender;
+            string id = verMas.CommandArgument;
+
+            Response.Redirect("articleDetail.aspx?id=" + id);
         }
     }
 }

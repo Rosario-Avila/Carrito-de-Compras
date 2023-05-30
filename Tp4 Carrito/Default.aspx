@@ -21,10 +21,15 @@
                         <div class="card-body">
                             <h5 class="card-title"><%#Eval("Name") %></h5>
                             <p class="card-text"><%#Eval("ArticleBrand") %></p>
-                            <a href="articleDetail.aspx">Ver mas</a>
+                            <%--<p class = "card-text"><%#Eval("ArticleId") %></p>--%>
 
-                            <asp:Button Text="Ver Mas" CssClass="btn btn-primary" runat="server" ID="verMas" CommandArgument='<%#Eval("ArticleId")%>' CommandName="ArticleId" Onclick="verMas_Click" />
-                        </div>
+                            <asp:Label Visible="false" ID="lblArticleId" Text='<%#Eval("ArticleId")%>' runat="server" />
+
+                            <asp:Button Text="Ver Mas" CssClass="btn btn-primary" runat="server" 
+                                ID="verMas" Onclick="verMas_Click" 
+                                CommandArgument='<%#Eval("ArticleId")%>' NavigateUrl= '<%#"articleDetail.aspx?id=" + Eval("ArticleId") %>'
+                             />
+                          </div>
                     </div>
                 </div>
             </ItemTemplate>

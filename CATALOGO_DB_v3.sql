@@ -111,3 +111,12 @@ From ARTICULOS A, CATEGORIAS C, MARCAS M
 Where C.Id = A.IdCategoria And M.Id = A.IdMarca
 
 
+Create Procedure SP_ArticlesList
+AS
+Select A.Id as artId, A.Nombre, A.Descripcion as artDescrip, Codigo as artCode, Precio as price, C.Descripcion as category, A.IdCategoria as categoryId, M.Descripcion as brand, A.IdMarca as brandId, I.ImagenUrl as imageUrl, I.Id as imageId
+From ARTICULOS A, CATEGORIAS C, MARCAS M, IMAGENES I
+Where C.Id = A.IdCategoria And M.Id = A.IdMarca And I.IdArticulo = A.Id
+
+exec SP_ArticlesList
+
+SELECT * FROM IMAGENES

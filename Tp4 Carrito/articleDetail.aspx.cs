@@ -16,12 +16,14 @@ namespace Tp4_Carrito
             ArticleConector conector = new ArticleConector();
             ListadoDeArticulos = conector.ListarConSp();
 
-            /* if (Request.QueryString["id"] != null)
+
+
+             if (Request.QueryString["id"] != null)
              {
-                 string id = Request.QueryString["id"].ToString();
-
-
-             }*/
+                int id = int.Parse(Request.QueryString["id"].ToString());
+                TxtId.Text = id.ToString(); 
+                
+             }
 
         }
     }

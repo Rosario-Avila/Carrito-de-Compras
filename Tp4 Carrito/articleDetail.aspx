@@ -6,9 +6,8 @@
 
     <h2>Detalle de pagina</h2>
     <hr />
-
-    <asp:Label Text="text" ID="lblId" runat="server" />
-
+    <asp:TextBox ID="TxtId" runat="server">Id</asp:TextBox>
+    
     <div id="carouselExample" class="carousel slide">
 
 
@@ -16,6 +15,10 @@
       foreach (domain.Article art in ListadoDeArticulos)
       {
        %>
+        
+            <%if ( TxtId.Text == art.ArticleId.ToString())
+                {
+                    %>
 
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -37,6 +40,8 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+            
+         <% } %>
 
    <% } %>
     </div>

@@ -21,6 +21,7 @@ namespace Tp4_Carrito
             ImageClass images= new ImageClass();
             ImageConector iConector = new ImageConector();
 
+       
              if (Request.QueryString["id"] != null)
              {
                 int id = int.Parse(Request.QueryString["id"].ToString());
@@ -37,8 +38,9 @@ namespace Tp4_Carrito
 
         
              }
+            
+               
 
-           
         }
     }
 }

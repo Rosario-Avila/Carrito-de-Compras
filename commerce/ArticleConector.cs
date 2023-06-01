@@ -54,7 +54,7 @@ namespace domain
             DataAccess data = new DataAccess();
             try
             {
-                data.setSp("SP_ArticlesList");
+                data.setSp("SP_ArtList");
 
 
                 data.execute();

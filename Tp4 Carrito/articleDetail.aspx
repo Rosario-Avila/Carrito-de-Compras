@@ -8,20 +8,23 @@
     <hr />
     <asp:Label Text="" ID="lblId" runat="server" />
     <hr />
-    <asp:ImageMap ID="ImgArt" runat="server"></asp:ImageMap>
+    <asp:ImageMap ID="ImgArt" runat="server"
+     onerror="this.src='https://static.wikia.nocookie.net/videojuego/images/9/9c/Imagen_no_disponible-0.png/revision/latest/thumbnail/width/360/height/360?cb=20170910134200'"></asp:ImageMap>
+
     <asp:Label Text="" ID="lblBrand" runat="server" />
     <asp:Label Text="" ID="lblCategory" runat="server" />
     <asp:Label Text="" ID="lblName" runat="server" />
     <asp:Label Text="" ID="lblDescription" runat="server" />
     <asp:Label Text="" ID="lblPrice" runat="server" />
     <asp:Label Text="" ID="lblImg" runat="server" />
-    <%--<div id="carouselExample" class="carousel slide">
+    
+     <%-- <div id="carouselExample" class="carousel slide">
 
-        <asp:Repeater runat="server">
+        <asp:Repeater runat="server" ID="repRepeater">
             <ItemTemplate>
                 <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="<%#Eval("imagenUrl")%>" class="d-block w-10" alt="..."
+                <img src="<%#Eval("ImageUrl")%>" class="d-block w-10" alt="..."
                     onerror="this.src='https://static.wikia.nocookie.net/videojuego/images/9/9c/Imagen_no_disponible-0.png/revision/latest/thumbnail/width/360/height/360?cb=20170910134200'">
           
             </div>

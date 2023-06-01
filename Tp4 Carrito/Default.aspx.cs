@@ -24,8 +24,6 @@ namespace Tp4_Carrito
                 repRepeater.DataBind();
             }
             
-            //dgvArticle.DataSource = conector.ListarConSp();
-            //dgvArticle.DataBind();
         }
 
         protected void verMas_Click(object sender, EventArgs e)
@@ -35,6 +33,16 @@ namespace Tp4_Carrito
             string id = verMas.CommandArgument;
 
             Response.Redirect("articleDetail.aspx?id=" + id);
+        }
+
+        protected void Agregar_Click(object sender, EventArgs e)
+        {
+            Button Agregar = (Button)sender;
+            string id = Agregar.CommandArgument;
+
+            Session.Add("idArticulo", id);
+
+            Response.Redirect("cartPage.aspx", false);
         }
     }
 }

@@ -22,7 +22,7 @@
                                 <a class="nav-link active" aria-current="page" href="/Default.aspx">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/Shopping.aspx">Shopping</a>
+                                <a class="nav-link" href="/cartPage.aspx">Cart</a>
                             </li>
                         </ul>
                     </div>

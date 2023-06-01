@@ -18,11 +18,23 @@ namespace Tp4_Carrito
             Article art = new Article();
             ArticleConector conector = new ArticleConector();
 
+            ImageClass images= new ImageClass();
+            ImageConector iConector = new ImageConector();
+
              if (Request.QueryString["id"] != null)
              {
                 int id = int.Parse(Request.QueryString["id"].ToString());
                 art = conector.ListarConId(id);
                 lblId.Text = art.ArticleId.ToString();
+                lblBrand.Text = art.ArticleBrand.Description;
+                lblName.Text = art.Name;
+                lblCategory.Text = art.ArticleCategory.Description;
+                lblDescription.Text = art.Description;
+                lblPrice.Text = art.Price.ToString();
+
+                images = iConector.ListarConId(id);
+                ImgArt.ImageUrl = images.ImageUrl;
+
         
              }
 

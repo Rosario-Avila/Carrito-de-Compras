@@ -33,7 +33,7 @@ namespace commerce
             if (_imageIndex > 0) { this._imageIndex--; }
         }
 
-        private List<ImageClass> FetchImageById(int idArticle)
+        public List<ImageClass> FetchImageById(int idArticle)
         {
             List<ImageClass> imageList = new List<ImageClass>();
             DataAccess db = new DataAccess();
@@ -63,5 +63,34 @@ namespace commerce
                 db.close();
             }
         }
+
+        public ImageClass ListarConId(int id)
+        {
+            DataAccess db = new DataAccess();
+
+            try
+            {
+                db.setQuery("select Id, IdArticulo, ImagenUrl from IMAGENES where IdArticulo  = " + id);
+                db.execute();
+
+                while (db.sqlReader.Read())
+                {
+                    ImageClass aux = new ImageClass(
+                        (!(db.sqlReader["Id"] is DBNull)) ? (int)db.sqlReader["Id"] : 0,
+                        (!(db.sqlReader["IdArticulo"] is DBNull)) ? (int)db.sqlReader["IdArticulo"] : 0,
+                        (!(db.sqlReader["ImagenUrl"] is DBNull)) ? (string)db.sqlReader["ImagenUrl"] : ""
+                        );
+                    return aux;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
     }
 }

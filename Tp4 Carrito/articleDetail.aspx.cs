@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using domain;
+using commerce;
 
 namespace Tp4_Carrito
 {
@@ -13,18 +14,19 @@ namespace Tp4_Carrito
         public List<Article> ListadoDeArticulos { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            Article art = new Article();
             ArticleConector conector = new ArticleConector();
-            ListadoDeArticulos = conector.ListarConSp();
-
-
 
              if (Request.QueryString["id"] != null)
              {
                 int id = int.Parse(Request.QueryString["id"].ToString());
-                TxtId.Text = id.ToString(); 
-                
+                art = conector.ListarConId(id);
+                lblId.Text = art.ArticleId.ToString();
+        
              }
 
+           
         }
     }
 }

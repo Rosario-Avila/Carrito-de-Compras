@@ -93,7 +93,46 @@ namespace domain
             }
         }
 
+        public Article ListarConId(int id)
+        {
+            DataAccess data = new DataAccess();
+            try
+            {
+                
+                data.setQuery("SELECT A.Id as artId, A.Nombre as Nombre, A.Codigo as artCode, A.Precio as price, A.Descripcion as artDescrip, M.Descripcion brand, M.Id brandId, C.Descripcion as category, C.Id as categoryId FROM Articulos A, MARCAS M, CATEGORIAS C WHERE A.Id = C.id and M.Id = A.Id and A.Id = @id");
 
+                data.setearParametro("@id", id);
+
+                data.execute();
+
+                while (data.sqlReader.Read())
+                {
+
+                    Article aux = new Article();
+                    aux.ArticleId = (!(data.sqlReader["artId"] is DBNull)) ? (int)data.sqlReader["artId"] : 0;
+                    aux.Name = (!(data.sqlReader["Nombre"] is DBNull)) ? (string)data.sqlReader["Nombre"] : "";
+                    aux.Description = (!(data.sqlReader["artDescrip"] is DBNull)) ? (string)data.sqlReader["artDescrip"] : "";
+                    aux.ArticleCode = (!(data.sqlReader["artCode"] is DBNull)) ? (string)data.sqlReader["artCode"] : "";
+                    aux.Price = (!(data.sqlReader["price"] is DBNull)) ? (decimal)data.sqlReader["price"] : 0;
+                    aux.ArticleCategory = new Category(
+                        (!(data.sqlReader["categoryId"] is DBNull)) ? (int)data.sqlReader["categoryId"] : 0,
+                        (!(data.sqlReader["category"] is DBNull)) ? (string)data.sqlReader["category"] : ""
+                        );
+                    aux.ArticleBrand = new Brand(
+                        (!(data.sqlReader["brandId"] is DBNull)) ? (int)data.sqlReader["brandId"] : 0,
+                        (!(data.sqlReader["brand"] is DBNull)) ? (string)data.sqlReader["brand"] : ""
+                        );
+                   
+                    return aux;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
         public void Modify(Article article)
         {
             DataAccess dataAcces = new DataAccess();
@@ -230,6 +269,8 @@ namespace domain
                 throw ex;
             }
         }
+
+       
     }   
 }
 

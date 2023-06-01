@@ -24,13 +24,13 @@ namespace Tp4_Carrito
         protected global::System.Web.UI.WebControls.Label lblId;
 
         /// <summary>
-        /// ImgArt control.
+        /// imageRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageMap ImgArt;
+        protected global::System.Web.UI.WebControls.Repeater imageRepeater;
 
         /// <summary>
         /// lblBrand control.

@@ -12,18 +12,20 @@ namespace Tp4_Carrito
     public partial class articleDetail : System.Web.UI.Page
     {
         public List<Article> ListadoDeArticulos { get; set; }
+
+        public List<ImageClass> ImageList = new List<ImageClass>();
         protected void Page_Load(object sender, EventArgs e)
         {
 
             Article art = new Article();
             ArticleConector conector = new ArticleConector();
 
-            ImageClass images= new ImageClass();
+            ImageClass images = new ImageClass();
             ImageConector iConector = new ImageConector();
 
-       
-             if (Request.QueryString["id"] != null)
-             {
+
+            if (Request.QueryString["id"] != null)
+            {
                 int id = int.Parse(Request.QueryString["id"].ToString());
                 art = conector.ListarConId(id);
                 lblId.Text = art.ArticleId.ToString();
@@ -33,13 +35,12 @@ namespace Tp4_Carrito
                 lblDescription.Text = art.Description;
                 lblPrice.Text = art.Price.ToString();
 
-                images = iConector.ListarConId(id);
-                ImgArt.ImageUrl = images.ImageUrl;
+                ImageList = iConector.FetchImageById(id);
 
-        
-             }
-            
-               
+                imageRepeater.DataSource = ImageList;
+                imageRepeater.DataBind();
+
+            }
 
         }
     }

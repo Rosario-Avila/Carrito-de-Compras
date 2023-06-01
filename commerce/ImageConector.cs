@@ -6,8 +6,8 @@ namespace commerce
 {
     public class ImageConector
     {
-        private List<ImageClass> _images;
-        private int _imageIndex;
+        public List<ImageClass> _images;
+        public int _imageIndex;
         public void FindImageById(int ArticleId)
         {
             this._imageIndex = 0;

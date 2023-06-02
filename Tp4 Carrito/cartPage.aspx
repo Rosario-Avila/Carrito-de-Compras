@@ -31,11 +31,18 @@
                                             <p><span class="text-muted">Category: </span><%#Eval("ArticleCategory.Description")%> <span class="text-muted">Brand: </span><%#Eval("ArticleBrand") %></p>
                                             <p><span class="text-muted"><%#Eval("Description")%> </span></p>
                                         </div>
+
                                         <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                                             <span class="badge text-bg-light"><%#Eval("Quantity") %></span>
                                         </div>
+                                     
                                         <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                           <asp:Label Visible="false" ID="lblArticleId" Text='<%#Eval("ArticleId")%>' runat="server" />
                                             <h5 class="mb-0">$<%#Eval("Price") %></h5>
+                                            <asp:Button Text="+" ID="btnAdd" class="btn btn-info" runat="server" OnClick="btnAdd_Click" 
+                                             CommandArgument='<%# Eval("ArticleId") %>' />
+                                            <asp:Button Text="-" ID="btnDelete" class="btn btn-info" runat="server"  OnClick="btnDelete_Click"
+                                             CommandArgument='<%# Eval("ArticleId") %>' />
                                         </div>
                                     </div>
                                 </div>

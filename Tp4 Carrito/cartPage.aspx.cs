@@ -1,6 +1,7 @@
 ﻿using domain;
 using System;
 using System.Collections.Generic;
+using System.Web.UI.WebControls;
 
 namespace Tp4_Carrito
 {
@@ -24,6 +25,8 @@ namespace Tp4_Carrito
                     }
                 }
 
+                
+
                 if (!IsPostBack)
                 {
                     repRepeater.DataSource = toShow;
@@ -36,6 +39,48 @@ namespace Tp4_Carrito
                     Master.UpdateCartItemCount(currentCart.GetTotalItems());
                 }
             }
+           
+        }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+
+            Button btnAdd_Click = (Button)sender;
+            int artId = int.Parse( btnAdd_Click.CommandArgument);
+
+            Cart cart = Session["Cart"] as Cart;
+            if (cart == null)
+            {
+                cart = new Cart();
+                Session["Cart"] = cart;
+            }
+            CartArticle current = new CartArticle(artId);
+
+            cart.AddArticle(current);
+            //Master.UpdateCartItemCount(cart.GetTotalItems());
+            Response.Redirect("cartPage.aspx");
+
+
+
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            Button btnDelete_Click = (Button)sender;
+            int artId = int.Parse(btnDelete_Click.CommandArgument);
+
+            Cart cart = Session["Cart"] as Cart;
+            if (cart == null)
+            {
+                cart = new Cart();
+                Session["Cart"] = cart;
+            }
+            CartArticle current = new CartArticle(artId);
+
+            cart.deleteArticle(current);
+            Response.Redirect("cartPage.aspx");
+
+
         }
     }
 }

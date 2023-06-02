@@ -7,6 +7,9 @@
 
     <h1>Productos en stock!</h1>
 
+    <asp:TextBox ID="TxtFilter" runat="server"></asp:TextBox>
+    <asp:Button ID="BtnFilter" Text="buscar" class="btn btn-dark"  runat="server" OnClick="BtnFilter_Click" />
+
     <section style="background-color: #eee;">
         <div class="container py-5">
             <div class="row">

@@ -19,6 +19,16 @@ namespace domain
             }
         }
 
+        public void deleteArticle(CartArticle art)
+        {
+            CartArticle existingArticle = ArtList.Find(a => a.CartItemId == art.CartItemId);
+            if (existingArticle != null && existingArticle.Quantity>0)
+            {
+                existingArticle.Quantity--;
+            }
+        }
+
+
         public void RemoveArticle(CartArticle art)
         {
             CartArticle current = GetArticle(art.CartItemId);

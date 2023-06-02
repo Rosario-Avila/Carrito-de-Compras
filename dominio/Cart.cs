@@ -49,5 +49,10 @@ namespace domain
             }
             return total;
         }
+
+        public int GetArticleQuantity(int id)
+        {
+            return GetArticle(id).Quantity;
+        }
     }
 }

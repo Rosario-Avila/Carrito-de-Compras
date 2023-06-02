@@ -70,3 +70,15 @@ C:\Users\Rosario Avila\OneDrive\Escritorio\tpCarrito4\Carrito-de-Compras\Tp4 Car
 C:\Users\Rosario Avila\OneDrive\Escritorio\tpCarrito4\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.csproj.CopyComplete
 C:\Users\Rosario Avila\OneDrive\Escritorio\tpCarrito4\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.dll
 C:\Users\Rosario Avila\OneDrive\Escritorio\tpCarrito4\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\bin\Tp4 Carrito.dll.config
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\bin\Tp4 Carrito.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\bin\Tp4 Carrito.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\bin\commerce.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\bin\domain.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\bin\commerce.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\bin\domain.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.csproj.AssemblyReference.cache
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.csproj.CoreCompileInputs.cache
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.csproj.CopyComplete
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\Tp4 Carrito\obj\Debug\Tp4 Carrito.pdb

@@ -34,3 +34,9 @@ C:\Users\Rosario Avila\OneDrive\Escritorio\tpCarrito4\Carrito-de-Compras\dominio
 C:\Users\Rosario Avila\OneDrive\Escritorio\tpCarrito4\Carrito-de-Compras\dominio\obj\Debug\domain.csproj.CoreCompileInputs.cache
 C:\Users\Rosario Avila\OneDrive\Escritorio\tpCarrito4\Carrito-de-Compras\dominio\obj\Debug\domain.dll
 C:\Users\Rosario Avila\OneDrive\Escritorio\tpCarrito4\Carrito-de-Compras\dominio\obj\Debug\domain.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\dominio\bin\Debug\domain.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\dominio\bin\Debug\domain.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\dominio\obj\Debug\domain.csproj.AssemblyReference.cache
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\dominio\obj\Debug\domain.csproj.CoreCompileInputs.cache
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\dominio\obj\Debug\domain.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\dominio\obj\Debug\domain.pdb

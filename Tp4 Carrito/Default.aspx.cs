@@ -10,10 +10,7 @@ namespace Tp4_Carrito
     public partial class Default : System.Web.UI.Page
     {
         public List<Article> ListadoDeArticulos { get; set; }
-        public Repeater RepeaterCart
-        {
-            get { return ((MasterPage)Master).FindControl("repeaterCart") as Repeater; }
-        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticleConector conector = new ArticleConector();
@@ -25,7 +22,12 @@ namespace Tp4_Carrito
                 repRepeater.DataSource = ListadoDeArticulos;
                 repRepeater.DataBind();
             }
-            
+
+            Cart currentCart = Session["Cart"] as Cart;
+            if (currentCart != null)
+            {
+                Master.UpdateCartItemCount(currentCart.GetTotalItems());
+            }
         }
 
         protected void verMas_Click(object sender, EventArgs e)
@@ -57,28 +59,8 @@ namespace Tp4_Carrito
                 CartArticle articleToAdd = new CartArticle(articleId);
 
                 currentCart.AddArticle(articleToAdd);
-            }
-            UpdateCartItemCount();
-        }
-        protected void UpdateCartItemCount()
-        {
-            MasterPage master = Master as MasterPage;
-            if (master != null)
-            {
-                Label lblTotalItems = master.FindControl("lblTotalItems") as Label;
-                if (lblTotalItems != null)
-                {
-                    Cart currentCart = Session["Cart"] as Cart;
-                    if (currentCart != null)
-                    {
-                        int totalItems = currentCart.GetTotalItems();
-                        lblTotalItems.Text = totalItems.ToString();
-                    }
-                    else
-                    {
-                        lblTotalItems.Text = "0";
-                    }
-                }
+                Session["Cart"] = currentCart;
+                Master.UpdateCartItemCount(currentCart.GetTotalItems());
             }
         }
     }

@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using domain;
 using commerce;
 
@@ -40,6 +36,12 @@ namespace Tp4_Carrito
                 imageRepeater.DataSource = ImageList;
                 imageRepeater.DataBind();
 
+            }
+
+            Cart currentCart = Session["Cart"] as Cart;
+            if(currentCart != null)
+            {
+                Master.UpdateCartItemCount(currentCart.GetTotalItems());
             }
 
         }

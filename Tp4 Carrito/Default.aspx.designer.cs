@@ -22,5 +22,19 @@ namespace Tp4_Carrito
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater repRepeater;
+
+        /// <summary>
+        /// Propiedad Master.
+        /// </summary>
+        /// <remarks>
+        /// Propiedad generada automáticamente.
+        /// </remarks>
+        public new Tp4_Carrito.Master Master
+        {
+            get
+            {
+                return ((Tp4_Carrito.Master)(base.Master));
+            }
+        }
     }
 }

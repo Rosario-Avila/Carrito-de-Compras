@@ -5,6 +5,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <style>
+        .button-container{
+            margin-top:10px;
+        }
+
+    </style>
+
   <asp:Label Text="" ID="probando" runat="server" />
 
     <section class="h-100" style="background-color: #eee;">
@@ -40,9 +47,9 @@
                                         <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                                             <asp:Label Visible="false" ID="lblArticleId" Text='<%#Eval("ArticleId")%>' runat="server" />
                                             <h5 class="mb-0">$<%#Eval("Price") %></h5>
-                                            <asp:Button Text="+" ID="btnAdd" class="btn btn-info" runat="server" OnClick="btnAdd_Click"
-                                                CommandArgument='<%# Eval("ArticleId") %>' />
                                             <asp:Button Text="-" ID="btnDelete" class="btn btn-info" runat="server" OnClick="btnDelete_Click"
+                                                CommandArgument='<%# Eval("ArticleId") %>' />
+                                            <asp:Button Text="+" ID="btnAdd" class="btn btn-info" runat="server" OnClick="btnAdd_Click"
                                                 CommandArgument='<%# Eval("ArticleId") %>' />
                                             <div class="button-container">
                                             <asp:Button Text="Delete" ID="btnDanger" class="btn btn-danger" runat="server" OnClick="btnDanger_Click"

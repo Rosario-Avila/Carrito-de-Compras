@@ -4,7 +4,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Label Text="" ID="probando" runat="server" />
+
+  <asp:Label Text="" ID="probando" runat="server" />
 
     <section class="h-100" style="background-color: #eee;">
         <div class="container h-100 py-5">
@@ -43,6 +44,10 @@
                                                 CommandArgument='<%# Eval("ArticleId") %>' />
                                             <asp:Button Text="-" ID="btnDelete" class="btn btn-info" runat="server" OnClick="btnDelete_Click"
                                                 CommandArgument='<%# Eval("ArticleId") %>' />
+                                            <div class="button-container">
+                                            <asp:Button Text="Delete" ID="btnDanger" class="btn btn-danger" runat="server" OnClick="btnDanger_Click"
+                                                CommandArgument='<%# Eval("ArticleId") %>' />
+                                                </div>
                                         </div>
                                     </div>
                                 </div>

@@ -63,7 +63,6 @@ namespace Tp4_Carrito
             CartArticle current = new CartArticle(artId);
 
             cart.AddArticle(current);
-            //Master.UpdateCartItemCount(cart.GetTotalItems());
             Response.Redirect("cartPage.aspx");
 
 
@@ -86,6 +85,23 @@ namespace Tp4_Carrito
             cart.deleteArticle(current);
             Response.Redirect("cartPage.aspx");
 
+
+        }
+
+        protected void btnDanger_Click(object sender, EventArgs e)
+        {
+            Button btnDanger_Click = (Button)sender;
+            int artId = int.Parse(btnDanger_Click.CommandArgument);
+
+            Cart currentCart = Session["Cart"] as Cart;
+            if (currentCart != null)
+            {
+               
+                    CartArticle current = new CartArticle(artId);
+                    currentCart.RemoveArticle(current);
+
+                Response.Redirect("cartPage.aspx");
+            }
 
         }
     }

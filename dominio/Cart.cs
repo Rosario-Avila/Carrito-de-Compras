@@ -21,12 +21,18 @@ namespace domain
 
         public void RemoveArticle(CartArticle art)
         {
-            ArtList.Remove(art);
+            CartArticle current = GetArticle(art.CartItemId);
+            ArtList.Remove(current);
         }
 
         public CartArticle GetArticle(int id)
         {
             return ArtList.Find(a => a.CartItemId == id);
+        }
+
+        public bool HasArticleId(int id)
+        {
+            return ArtList.Contains(GetArticle(id));
         }
 
         public List<CartArticle> GetArticles()

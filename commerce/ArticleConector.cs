@@ -48,6 +48,34 @@ namespace domain
             }
         }
 
+        public List<ArticleWithCartDetail> GetArticleWithCartDetails()
+        {
+            List<ArticleWithCartDetail> articleList = new List<ArticleWithCartDetail>();
+            List<Article> articles = ListarConSp();
+
+            foreach (Article article in articles)
+            {
+                ArticleWithCartDetail articleWithCartDetail = new ArticleWithCartDetail
+                {
+                    ArticleId = article.ArticleId,
+                    ArticleCode = article.ArticleCode,
+                    Name = article.Name,
+                    Description = article.Description,
+                    ArticleBrand = article.ArticleBrand,
+                    ArticleCategory = article.ArticleCategory,
+                    ArticleImage = article.ArticleImage,
+                    Image = article.Image,
+                    Price = Math.Round(article.Price,2),
+                    PriceOld = Math.Round(article.Price + (article.Price * 15 / 100),2),
+                    Quantity = 0
+                };
+
+                articleList.Add(articleWithCartDetail);
+            }
+
+            return articleList;
+
+        }
         public List<Article> ListarConSp()
         {
             List<Article> list = new List<Article>();

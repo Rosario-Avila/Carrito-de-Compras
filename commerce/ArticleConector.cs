@@ -56,7 +56,6 @@ namespace domain
             {
                 data.setSp("SP_ArtList");
 
-
                 data.execute();
 
                 while (data.sqlReader.Read())

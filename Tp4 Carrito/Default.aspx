@@ -31,8 +31,10 @@
                              />
                             
                             <asp:Button Text="Agregar al carrito" CssClass="btn btn-primary" runat="server" 
-                                ID="Agregar" Onclick="Agregar_Click"
+                                ID="Agregar" 
+                                Onclick="Agregar_Click"
                                 CommandArgument='<%#Eval("ArticleId")%>'
+                                UseSubmitBehavior="false"
                              />
                             
                           </div>

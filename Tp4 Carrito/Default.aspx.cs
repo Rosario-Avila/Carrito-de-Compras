@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using commerce;
 using domain;
 
 namespace Tp4_Carrito
 {
+
     public partial class Default : System.Web.UI.Page
     {
         public List<Article> ListadoDeArticulos { get; set; }
+        public Repeater RepeaterCart
+        {
+            get { return ((MasterPage)Master).FindControl("repeaterCart") as Repeater; }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticleConector conector = new ArticleConector();
@@ -37,12 +39,47 @@ namespace Tp4_Carrito
 
         protected void Agregar_Click(object sender, EventArgs e)
         {
-            Button Agregar = (Button)sender;
-            string id = Agregar.CommandArgument;
+            Button btnAgregar = (Button)sender;
+            string id = btnAgregar.CommandArgument;
 
-            Session.Add("idArticulo", id);
+            // Obtener el carrito actual de la sesión
+            Cart currentCart = Session["Cart"] as Cart;
+            if (currentCart == null)
+            {
+                currentCart = new Cart();
+                Session["Cart"] = currentCart;
+            }
 
-            Response.Redirect("cartPage.aspx", false);
+            // Crear un objeto CartArticle con el ID convertido a entero
+            int articleId;
+            if (int.TryParse(id, out articleId))
+            {
+                CartArticle articleToAdd = new CartArticle(articleId);
+
+                currentCart.AddArticle(articleToAdd);
+            }
+            UpdateCartItemCount();
+        }
+        protected void UpdateCartItemCount()
+        {
+            MasterPage master = Master as MasterPage;
+            if (master != null)
+            {
+                Label lblTotalItems = master.FindControl("lblTotalItems") as Label;
+                if (lblTotalItems != null)
+                {
+                    Cart currentCart = Session["Cart"] as Cart;
+                    if (currentCart != null)
+                    {
+                        int totalItems = currentCart.GetTotalItems();
+                        lblTotalItems.Text = totalItems.ToString();
+                    }
+                    else
+                    {
+                        lblTotalItems.Text = "0";
+                    }
+                }
+            }
         }
     }
 }

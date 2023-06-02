@@ -34,7 +34,8 @@
             </div>
             <footer>
                 <hr />
-                pie de pagina :)
+                <p>Total de artículos en el carrito: <asp:Label runat="server" ID="lblTotalItems"></asp:Label></p>
+                <asp:Label runat="server" ID="lblItemCount"></asp:Label>
             </footer>
         </div>
     </form>

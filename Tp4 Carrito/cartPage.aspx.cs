@@ -25,13 +25,19 @@ namespace Tp4_Carrito
                     }
                 }
 
-                
-
                 if (!IsPostBack)
                 {
                     repRepeater.DataSource = toShow;
                     repRepeater.DataBind();
                 }
+
+                decimal total = 0;
+                foreach(var item in toShow)
+                {
+                    total += item.Price * item.Quantity;
+                }
+
+                lblTotal.Text =  total.ToString("0.00");
 
                 Cart currentCart = Session["Cart"] as Cart;
                 if (currentCart != null)

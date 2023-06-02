@@ -35,20 +35,28 @@
                                         <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                                             <span class="badge text-bg-light"><%#Eval("Quantity") %></span>
                                         </div>
-                                     
+
                                         <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                           <asp:Label Visible="false" ID="lblArticleId" Text='<%#Eval("ArticleId")%>' runat="server" />
+                                            <asp:Label Visible="false" ID="lblArticleId" Text='<%#Eval("ArticleId")%>' runat="server" />
                                             <h5 class="mb-0">$<%#Eval("Price") %></h5>
-                                            <asp:Button Text="+" ID="btnAdd" class="btn btn-info" runat="server" OnClick="btnAdd_Click" 
-                                             CommandArgument='<%# Eval("ArticleId") %>' />
-                                            <asp:Button Text="-" ID="btnDelete" class="btn btn-info" runat="server"  OnClick="btnDelete_Click"
-                                             CommandArgument='<%# Eval("ArticleId") %>' />
+                                            <asp:Button Text="+" ID="btnAdd" class="btn btn-info" runat="server" OnClick="btnAdd_Click"
+                                                CommandArgument='<%# Eval("ArticleId") %>' />
+                                            <asp:Button Text="-" ID="btnDelete" class="btn btn-info" runat="server" OnClick="btnDelete_Click"
+                                                CommandArgument='<%# Eval("ArticleId") %>' />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </ItemTemplate>
                     </asp:Repeater>
+                    <div class="card">
+                        <div class="card-body">
+                            <button type="button" class="btn btn-warning btn-block btn-lg">Total to Pay : </button>
+                            <asp:Label ID="lblTotal" runat="server"></asp:Label>
+                           </div>
+                    </div>
+                    
+
 
 
                     <div class="card mb-4">

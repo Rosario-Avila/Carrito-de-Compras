@@ -33,6 +33,15 @@ namespace Tp4_Carrito
         protected global::System.Web.UI.WebControls.Repeater repRepeater;
 
         /// <summary>
+        /// lblTotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotal;
+
+        /// <summary>
         /// Master property.
         /// </summary>
         /// <remarks>

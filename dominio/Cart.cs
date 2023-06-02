@@ -22,10 +22,14 @@ namespace domain
         public void deleteArticle(CartArticle art)
         {
             CartArticle existingArticle = ArtList.Find(a => a.CartItemId == art.CartItemId);
-            if (existingArticle != null && existingArticle.Quantity>0)
+            if (existingArticle != null && existingArticle.Quantity>1)
             {
                 existingArticle.Quantity--;
             }
+            else if (existingArticle != null && existingArticle.Quantity == 1)
+            {
+                RemoveArticle(art);
+            } 
         }
 
 

@@ -61,3 +61,12 @@ C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\commerce\obj
 C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\commerce\obj\Debug\commerce.csproj.CopyComplete
 C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\commerce\obj\Debug\commerce.dll
 C:\Users\Rosario Avila\OneDrive\Escritorio\tp4 D\Carrito-de-Compras\commerce\obj\Debug\commerce.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp 4 carrito\Carrito-de-Compras\commerce\bin\Debug\commerce.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp 4 carrito\Carrito-de-Compras\commerce\bin\Debug\commerce.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp 4 carrito\Carrito-de-Compras\commerce\bin\Debug\domain.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp 4 carrito\Carrito-de-Compras\commerce\bin\Debug\domain.pdb
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp 4 carrito\Carrito-de-Compras\commerce\obj\Debug\commerce.csproj.AssemblyReference.cache
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp 4 carrito\Carrito-de-Compras\commerce\obj\Debug\commerce.csproj.CoreCompileInputs.cache
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp 4 carrito\Carrito-de-Compras\commerce\obj\Debug\commerce.csproj.CopyComplete
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp 4 carrito\Carrito-de-Compras\commerce\obj\Debug\commerce.dll
+C:\Users\Rosario Avila\OneDrive\Escritorio\tp 4 carrito\Carrito-de-Compras\commerce\obj\Debug\commerce.pdb

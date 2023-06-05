@@ -36,7 +36,7 @@
 
     </style>
     
-    <h2>Detalle de Producto!</h2>
+    <h2>Detalles del Producto!</h2>
     <hr />
 
 

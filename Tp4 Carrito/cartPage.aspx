@@ -36,13 +36,14 @@
                                         </div>
                                         <div class="col-md-3 col-lg-3 col-xl-3">
                                             <p class="lead fw-normal mb-2"><%#Eval("Name") %></p>
-                                            <p><span class="text-muted">Category: </span><%#Eval("ArticleCategory.Description")%> <span class="text-muted">Brand: </span><%#Eval("ArticleBrand") %></p>
+                                            <p><span class="text-muted">Categoria: </span><%#Eval("ArticleCategory.Description")%> <span class="text-muted">Marca: </span><%#Eval("ArticleBrand") %></p>
                                             <p><span class="text-muted"><%#Eval("Description")%> </span></p>
                                         </div>
 
                                         <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                                             <span class="badge text-bg-light"><%#Eval("Quantity") %></span>
                                         </div>
+                                        
 
                                         <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                                             <asp:Label Visible="false" ID="lblArticleId" Text='<%#Eval("ArticleId")%>' runat="server" />
@@ -52,7 +53,7 @@
                                             <asp:Button Text="+" ID="btnAdd" class="btn btn-info" runat="server" OnClick="btnAdd_Click"
                                                 CommandArgument='<%# Eval("ArticleId") %>' />
                                             <div class="button-container">
-                                            <asp:Button Text="Delete" ID="btnDanger" class="btn btn-danger" runat="server" OnClick="btnDanger_Click"
+                                            <asp:Button Text="Eliminar" ID="btnDanger" class="btn btn-danger" runat="server" OnClick="btnDanger_Click"
                                                 CommandArgument='<%# Eval("ArticleId") %>' />
                                                 </div>
                                         </div>
@@ -63,7 +64,7 @@
                     </asp:Repeater>
                     <div class="card">
                         <div class="card-body">
-                            <button type="button" class="btn btn-warning btn-block btn-lg">Total to Pay : </button>
+                            <asp:Label Text="Total a pagar:" runat="server" />
                             <asp:Label ID="lblTotal" runat="server"></asp:Label>
                            </div>
                     </div>

@@ -104,6 +104,8 @@ namespace Tp4_Carrito
                 Button btnAgregado = e.Item.FindControl("BtnAgregado") as Button;
                 Button btnAgregar = e.Item.FindControl("BtnAgregar") as Button;
                 Button btnEliminar = e.Item.FindControl("BtnEliminar") as Button;
+                Button btnSumar = e.Item.FindControl("btnSumar") as Button;
+                Button btnRestar = e.Item.FindControl("btnRestar") as Button;
 
                 Cart currentCart = Session["Cart"] as Cart;
 
@@ -112,12 +114,16 @@ namespace Tp4_Carrito
                     btnAgregado.Visible = true;
                     btnEliminar.Visible = true;  
                     btnAgregar.Visible = false;
+                    btnSumar.Visible = true;
+                    btnRestar.Visible = true;
                 }
                 else
                 {
                     btnAgregar.Visible = true;
                     btnEliminar.Visible = false;
                     btnAgregado.Visible = false;
+                    btnSumar.Visible = false;
+                    btnRestar.Visible = false;
                 }
             }
         }
@@ -137,7 +143,38 @@ namespace Tp4_Carrito
                 repRepeater.DataBind();
             }
 
+        protected void btnRestar_Click(object sender, EventArgs e)
+        {
+            Button btnRestar_Click = (Button)sender;
+            int artId = int.Parse(btnRestar_Click.CommandArgument);
 
-        
+            Cart cart = Session["Cart"] as Cart;
+            if (cart == null)
+            {
+                cart = new Cart();
+                Session["Cart"] = cart;
+            }
+            CartArticle current = new CartArticle(artId);
+
+            cart.deleteArticle(current);
+            Response.Redirect("Default.aspx");
+        }
+
+        protected void btnSumar_Click(object sender, EventArgs e)
+        {
+            Button btnSumar_Click = (Button)sender;
+            int artId = int.Parse(btnSumar_Click.CommandArgument);
+
+            Cart cart = Session["Cart"] as Cart;
+            if (cart == null)
+            {
+                cart = new Cart();
+                Session["Cart"] = cart;
+            }
+            CartArticle current = new CartArticle(artId);
+
+            cart.AddArticle(current);
+            Response.Redirect("Default.aspx");
+        }
     }
 }

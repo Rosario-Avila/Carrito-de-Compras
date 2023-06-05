@@ -64,6 +64,17 @@
                                         CommandArgument='<%# Eval("ArticleId") %>'
                                         UseSubmitBehavior="false"
                                         Visible="false" />
+                                    <div>
+                                    <asp:Button Text="-" ID="btnRestar" 
+                                        class="btn btn-info" runat="server" 
+                                        OnClick="btnRestar_Click"
+                                        CommandArgument='<%# Eval("ArticleId") %>' />
+                                    <asp:Button Text="+" ID="btnSumar" 
+                                        class="btn btn-info" runat="server" 
+                                        OnClick="btnSumar_Click"
+                                        CommandArgument='<%# Eval("ArticleId") %>' />
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

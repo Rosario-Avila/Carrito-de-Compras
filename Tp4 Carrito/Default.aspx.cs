@@ -174,7 +174,7 @@ namespace Tp4_Carrito
             CartArticle current = new CartArticle(artId);
 
             cart.AddArticle(current);
-            Response.Redirect("Default.aspx");
+           // Response.Redirect("Default.aspx");
         }
     }
 }
